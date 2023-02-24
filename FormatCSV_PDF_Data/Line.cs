@@ -19,7 +19,6 @@ namespace FormatCSV_PDF_Data
         /// <value></value>
         public int Id { get; set; } = 0;
 
-
         public string[] Lines => ConvertToLines();
 
         public Line()
@@ -98,8 +97,7 @@ namespace FormatCSV_PDF_Data
 
             for (int i = 0; i < data.Length; i++)
             {
-                result = "\t" + i.ToString() + " " + data[i];
-                
+                result = "\t" + i.ToString() + " " + data[i]; 
             }
 
             return result;
